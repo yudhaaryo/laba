@@ -15,43 +15,44 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".modules.login.ui.SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".aaaaaActivity"
             android:exported="false" />
         <activity
             android:name=".modules.badminton.ui.BadmintonActivity"
-            android:screenOrientation="portrait" />
-<!--        <activity-->
-<!--            android:name=".modules.basket.ui.BasketActivity"-->
-<!--            android:screenOrientation="portrait" />-->
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".modules.basket.ui.BasketActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
         <activity
             android:name=".modules.join.ui.JoinActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".modules.register.ui.RegisterActivity"
-            android:screenOrientation="portrait" />
-<!--        <activity-->
-<!--            android:name=".modules.chat.ui.ChatActivity"-->
-<!--            android:exported="true"-->
-<!--            android:screenOrientation="portrait" />-->
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".modules.chat.ui.ChatActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="portrait" /> -->
         <activity
-            android:name=".modules.maps1.ui.Maps1Activity"
+            android:name=".modules.maps1.ui.BerandaActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".modules.landingpage.ui.LandingpageActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".modules.login.ui.LoginActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".modules.iphone8four.ui.Iphone8FourActivity"
+            android:name=".modules.iphone8four.ui.FutsalActivity"
             android:screenOrientation="portrait" />
     </application>
 

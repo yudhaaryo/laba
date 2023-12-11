@@ -6,7 +6,7 @@ import com.yudhaaryosapplication.app.R
 import com.yudhaaryosapplication.app.appcomponents.base.BaseActivity
 import com.yudhaaryosapplication.app.databinding.ActivityBadmintonBinding
 import com.yudhaaryosapplication.app.modules.badminton.`data`.viewmodel.BadmintonVM
-import com.yudhaaryosapplication.app.modules.iphone8four.ui.Iphone8FourActivity
+import com.yudhaaryosapplication.app.modules.iphone8four.ui.FutsalActivity
 import kotlin.Boolean
 import kotlin.String
 import kotlin.Unit
@@ -22,7 +22,7 @@ class BadmintonActivity : BaseActivity<ActivityBadmintonBinding>(R.layout.activi
 
   override fun setUpClicks(): Unit {
     binding.imageFilter.setOnClickListener {
-      val destIntent = Iphone8FourActivity.getIntent(this, null)
+      val destIntent = FutsalActivity.getIntent(this, null)
       startActivity(destIntent)
     }
   }

@@ -1,73 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="registerVM" type="com.yudhaaryosapplication.app.modules.register.data.viewmodel.RegisterVM"/>
+        <variable name="loginVM" type="com.yudhaaryosapplication.app.modules.login.data.viewmodel.LoginVM"/>
     </data>
-    <LinearLayout android:id="@+id/linearIPhone8Two"
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearIPhone8Twel"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical" style="@style/groupStylewhite_A700">
-        <FrameLayout
-            android:layout_gravity="center_horizontal"
-            android:layout_height="@dimen/_81pxv"
-            android:layout_marginEnd="@dimen/_12pxh"
-            android:layout_marginStart="@dimen/_12pxh"
-            android:layout_marginTop="@dimen/_51pxv" android:layout_width="@dimen/_123pxh">
-            <TextView android:ellipsize="end"
-                android:gravity="top|start"
-                android:id="@+id/txtOlahragaBareng"
-                android:layout_gravity="bottom|center"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_10pxh"
-                android:layout_marginStart="@dimen/_10pxh"
-                android:layout_marginTop="@dimen/_10pxv"
-                android:layout_width="match_parent"
-                android:singleLine="true"
-                android:text="@{registerVM.registerModel.txtOlahragaBareng}"
-                style="@style/txtPoppinslight12" tools:text="@string/lbl_olahraga_bareng"/>
-            <TextView android:ellipsize="end"
-                android:gravity="top|start" android:id="@+id/txtLaba"
-                android:layout_gravity="top|start"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_10pxv"
-                android:layout_width="match_parent"
-                android:singleLine="true"
-                android:text="@{registerVM.registerModel.txtLaba}"
-                style="@style/txtPoppinssemibold49_1" tools:text="@string/lbl_laba"/>
-        </FrameLayout>
-        <TextView android:ellipsize="end" android:id="@+id/txtLanguage"
-            android:layout_gravity="start"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_marginHorizontal="40dp"
-            android:textColor="@color/black_900"
-            android:singleLine="true"
-            android:text="Create your account"/>
-        <ImageView android:id="@+id/imageUser"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="@dimen/_70pxh"
-            android:layout_marginEnd="@dimen/_12pxh"
-            android:layout_marginStart="@dimen/_12pxh"
-            android:layout_marginTop="@dimen/_11pxv"
-            android:layout_width="@dimen/_70pxh"
-            android:scaleType="fitXY" android:src="@drawable/img_user"
-            tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
-        <TextView android:ellipsize="end"
-            android:id="@+id/txtSelectimages"
+        <TextView android:ellipsize="end" android:id="@+id/txtLaba"
             android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_12pxh"
             android:layout_marginStart="@dimen/_12pxh"
-            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_51pxv"
             android:layout_width="wrap_content"
             android:singleLine="true"
-            android:text="@{registerVM.registerModel.txtSelectimages}"
-            style="@style/txtPoppinsregular15_2" tools:text="@string/lbl_select_images"/>
-
+            android:text="@{loginVM.loginModel.txtLaba}"
+            style="@style/txtPoppinssemibold49_1" tools:text="@string/lbl_laba"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOlahragaBareng"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{loginVM.loginModel.txtOlahragaBareng}"
+            style="@style/txtPoppinslight12" tools:text="@string/lbl_olahraga_bareng"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtLogintoyoura"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_76pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{loginVM.loginModel.txtLogintoyoura}"
+            style="@style/txtPoppinsregular15" tools:text="@string/msg_login_to_your_a"/>
         <EditText
             android:background="@drawable/rectangle_border_black_900_radius_18"
             android:ellipsize="end" android:hint="@string/lbl_email"
-            android:id="@+id/edt_email_register"
+            android:id="@+id/edt_email_login"
             android:inputType="textEmailAddress"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_12pxh"
@@ -78,46 +52,48 @@
             android:paddingEnd="@dimen/_30pxh"
             android:paddingStart="@dimen/_14pxh"
             android:paddingTop="@dimen/_19pxv" android:singleLine="true"
-            android:text="@={registerVM.registerModel.etFrameOneValue}"
+            android:text="@={loginVM.loginModel.etFrameOneValue}"
             android:textColorHint="@color/black_900"
             style="@style/etRoundedOutline" tools:ignore="Autofill"/>
         <EditText
             android:background="@drawable/rectangle_border_black_900_radius_18"
             android:ellipsize="end" android:hint="@string/lbl_password"
-            android:id="@+id/edt_password_register"
+            android:id="@+id/edt_password_login"
             android:inputType="textPassword"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_12pxh"
             android:layout_marginStart="@dimen/_12pxh"
-            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_marginTop="@dimen/_17pxv"
             android:layout_width="match_parent"
             android:paddingBottom="@dimen/_20pxv"
             android:paddingEnd="@dimen/_30pxh"
             android:paddingStart="@dimen/_14pxh"
             android:paddingTop="@dimen/_19pxv" android:singleLine="true"
-            android:text="@={registerVM.registerModel.etFrameThreeValue}"
+            android:text="@={loginVM.loginModel.etFrameThreeValue}"
             android:textColorHint="@color/black_900"
             style="@style/etRoundedOutline" tools:ignore="Autofill"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSignUp"
-            style="@style/btnSolidRounded_1"
+        <TextView
+            android:id="@+id/tv_to_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_12pxh"
-            android:layout_marginTop="@dimen/_106pxv"
+            android:text="Register Here"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnLogin"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_12pxh"
-            android:ellipsize="end"
-            android:gravity="center"
-            android:paddingStart="@dimen/_30pxh"
-            android:paddingTop="@dimen/_10pxv"
-            android:paddingEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_238pxv"
+            android:layout_width="match_parent"
             android:paddingBottom="@dimen/_10pxv"
-            android:singleLine="true"
-            android:text="Sign Up"
-            android:textAllCaps="false"
-            tools:text="Sign Up" />
-
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxv" android:singleLine="true"
+            android:text="@string/lbl_login" android:textAllCaps="false"
+            style="@style/btnSolidRounded_1" tools:text="@string/lbl_login"/>
         <LinearLayout android:gravity="center_vertical"
             android:id="@+id/linearSigningoogle"
             android:layout_height="wrap_content"
@@ -144,34 +120,34 @@
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_weight="0.86" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{registerVM.registerModel.txtOrSignInWith}"
+                android:text="@{loginVM.loginModel.txtOrSignInWith}"
                 style="@style/txtPoppinsregular16" tools:text="@string/msg_or_sign_in_with"/>
         </LinearLayout>
-        <LinearLayout android:gravity="start"
-            android:id="@+id/linearRowlanguageOne"
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowlanguage"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_44pxv"
-            android:layout_marginEnd="@dimen/_78pxh"
-            android:layout_marginStart="@dimen/_78pxh"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
             android:layout_marginTop="@dimen/_23pxv"
             android:layout_width="wrap_content" android:orientation="horizontal">
             <TextView android:ellipsize="end"
-                android:id="@+id/txtLanguageOne"
+                android:id="@+id/txtLanguage"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_1pxv"
-                android:layout_weight="0.69" android:layout_width="0dp"
+                android:layout_weight="0.73" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{registerVM.registerModel.txtLanguageOne}"
-                style="@style/txtPoppinsregular15" tools:text="@string/lbl_have_account"/>
+                android:text="@{loginVM.loginModel.txtLanguage}"
+                style="@style/txtPoppinsregular15" tools:text="@string/msg_dont_have_accou"/>
             <TextView android:ellipsize="end"
-                android:id="@+id/txtSignIn"
+                android:id="@+id/txtSignUp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5pxh"
                 android:layout_marginTop="@dimen/_1pxv"
-                android:layout_weight="0.31" android:layout_width="0dp"
+                android:layout_weight="0.27" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{registerVM.registerModel.txtSignIn}"
-                style="@style/txtPoppinsregular15_1" tools:text="@string/lbl_sign_in"/>
+                android:text="@{loginVM.loginModel.txtSignUp}"
+                style="@style/txtPoppinsregular15_1" tools:text="@string/lbl_sign_up"/>
         </LinearLayout>
     </LinearLayout>
 </layout>

@@ -1,4 +1,4 @@
-package com.yudhaaryosapplication.app.modules.iphone8four.ui
+package com.yudhaaryosapplication.app.modules.maps1.ui
 
 import android.content.Context
 import android.content.Intent
@@ -7,19 +7,18 @@ import androidx.activity.viewModels
 import androidx.appcompat.widget.SearchView
 import com.yudhaaryosapplication.app.R
 import com.yudhaaryosapplication.app.appcomponents.base.BaseActivity
-import com.yudhaaryosapplication.app.databinding.ActivityIphone8FourBinding
-import com.yudhaaryosapplication.app.modules.iphone8four.`data`.viewmodel.Iphone8FourVM
+import com.yudhaaryosapplication.app.databinding.ActivityMaps1Binding
+import com.yudhaaryosapplication.app.modules.maps1.`data`.viewmodel.Maps1VM
 import kotlin.Boolean
 import kotlin.String
 import kotlin.Unit
 
-class Iphone8FourActivity :
-    BaseActivity<ActivityIphone8FourBinding>(R.layout.activity_iphone_8_four) {
-  private val viewModel: Iphone8FourVM by viewModels<Iphone8FourVM>()
+class BerandaActivity : BaseActivity<ActivityMaps1Binding>(R.layout.activity_maps1) {
+  private val viewModel: Maps1VM by viewModels<Maps1VM>()
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
-    binding.iphone8FourVM = viewModel
+    binding.maps1VM = viewModel
     setUpSearchViewFrameFifteenListener()
   }
 
@@ -43,11 +42,11 @@ class Iphone8FourActivity :
     }
 
     companion object {
-      const val TAG: String = "IPHONE8FOUR_ACTIVITY"
+      const val TAG: String = "MAPS1ACTIVITY"
 
 
       fun getIntent(context: Context, bundle: Bundle?): Intent {
-        val destIntent = Intent(context, Iphone8FourActivity::class.java)
+        val destIntent = Intent(context, BerandaActivity::class.java)
         destIntent.putExtra("bundle", bundle)
         return destIntent
       }
