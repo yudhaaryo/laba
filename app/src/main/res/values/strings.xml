@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">yudha_aryo_s_application1</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="msg_login_to_your_a">Login to your account</string>
+    <string name="msg_badminton_baren">Badminton bareng!</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_select_images">select images</string>
+    <string name="lbl_basket_w_vandi">Basket w/ Vandi</string>
+    <string name="msg_jl_agro_sentur">jl. Agro senturan, kec.depok,
+kabupaten sleman utara, Daerah
+Istimewah 16587</string>
+    <string name="lbl_udin">udin</string>
+    <string name="lbl_back">back</string>
+    <string name="lbl_search">Search </string>
+    <string name="lbl_laba">Laba</string>
+    <string name="msg_apakah_boleh_ba">apakah boleh bawa bola mas?</string>
+    <string name="lbl_join">Join</string>
+    <string name="lbl_8_20">(8/20)</string>
+    <string name="lbl_olahraga_bareng">Olahraga Bareng</string>
+    <string name="msg_create_your_acc"> Create your account</string>
+    <string name="msg_hai_udin_sudah">Hai Udin, sudah berolahraga hari ini?</string>
+    <string name="lbl_3_10">(3/10)</string>
+    <string name="msg_forum_chat_bask">forum chat Basket w/ Vandi</string>
+    <string name="lbl_login">Login </string>
+    <string name="msg_dont_have_accou">Dont have account? </string>
+    <string name="msg_hai_udin_sudah2">Hai udin, sudah berolahraga hari ini?</string>
+    <string name="lbl_berhasil">BERHASIL!</string>
+    <string name="lbl_sign_in">Sign In</string>
+    <string name="lbl_vandi">vandi</string>
+    <string name="msg_write_massagge">Write massagge...</string>
+    <string name="lbl_join2">JOIN</string>
+    <string name="lbl_19_00_21_00">19.00-21.00</string>
+    <string name="lbl_16_00_19_00">16.00-19.00</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_5_20">(5/20)</string>
+    <string name="lbl_petunjuk_arah">Petunjuk arah</string>
+    <string name="msg_desc_ayo_kita">desc:
+ayo kita basketan! jaga kesehatan lebih penting dari pada mengobati loh gais!</string>
+    <string name="msg_or_sign_in_with">Or Sign In With Google</string>
+    <string name="lbl_silahkan_mas">Silahkan mas</string>
+    <string name="lbl_username">Username</string>
+    <string name="lbl_have_account">have account? </string>
+    <string name="lbl_mari_futsal">Mari Futsal</string>
+    <string name="lbl_forum_chat">forum chat </string>
+    <string name="msg_please_enter_valid_pa">Please enter valid password</string>
+    <string name="msg_please_enter_valid_email">Please enter valid email</string>
+    <string name="msg_please_enter_valid_text">Please enter valid text</string>
+</resources>

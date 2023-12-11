@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="landingpageVM" type="com.yudhaaryosapplication.app.modules.landingpage.data.viewmodel.LandingpageVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearIPhone8One"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleteal_300">
+        <TextView android:ellipsize="end" android:id="@+id/txtLaba"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_126pxh"
+            android:layout_marginStart="@dimen/_126pxh"
+            android:layout_marginTop="@dimen/_365pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{landingpageVM.landingpageModel.txtLaba}"
+            style="@style/txtPoppinssemibold49" tools:text="@string/lbl_laba"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOlahragaBareng"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_126pxh"
+            android:layout_marginStart="@dimen/_126pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{landingpageVM.landingpageModel.txtOlahragaBareng}"
+            style="@style/txtPoppinslight12_1" tools:text="@string/lbl_olahraga_bareng"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="maps1VM" type="com.yudhaaryosapplication.app.modules.maps1.data.viewmodel.Maps1VM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameIPhone8Ten"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyle">
+        <LinearLayout android:id="@+id/linearColumnhaiudinsudah"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowhaiudinsudah"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyleteal_300cornerRadius">
+                    <TextView android:id="@+id/txtHaiUdinsudah"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.82"
+                        android:layout_width="0dp"
+                        android:text="@{maps1VM.maps1Model.txtHaiUdinsudah}"
+                        style="@style/txtPoppinsmedium16" tools:text="@string/msg_hai_udin_sudah"/>
+                    <ImageView android:id="@+id/imageEllipseTwelve"
+                        android:layout_height="@dimen/_50pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:layout_marginStart="@dimen/_26pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_50pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_ellipse12}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse12"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <androidx.appcompat.widget.SearchView
+                android:background="@drawable/rectangle_bg_white_a700_radius_15"
+                android:gravity="start"
+                android:id="@+id/searchViewFrameFifteen"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:theme="@style/searchViewFrameFifteen"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="@string/lbl_search" app:searchIcon="@drawable/img_search"/>
+            <LinearLayout android:id="@+id/linearRowprinter"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_54pxh"
+                android:layout_marginStart="@dimen/_54pxh"
+                android:layout_marginTop="@dimen/_157pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imagePrinter"
+                    android:layout_height="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="@dimen/_42pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_printer_gray_300"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_printer_gray_300"/>
+                <ImageView android:id="@+id/imageFilter"
+                    android:layout_height="@dimen/_31pxh"
+                    android:layout_marginBottom="@dimen/_24pxv"
+                    android:layout_marginStart="@dimen/_122pxh"
+                    android:layout_width="@dimen/_40pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_filter"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_filter"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageVector"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_38pxh"
+                android:layout_marginEnd="@dimen/_242pxh"
+                android:layout_marginStart="@dimen/_54pxh"
+                android:layout_marginTop="@dimen/_82pxv"
+                android:layout_width="@dimen/_38pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+            <ImageButton
+                android:background="@drawable/rectangle_bg_white_a700_radius_15"
+                android:id="@+id/btnAkariconsplus"
+                android:layout_height="@dimen/_53pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_213pxv"
+                android:layout_width="@dimen/_53pxh"
+                android:paddingHorizontal="@dimen/_8pxh"
+                android:paddingVertical="@dimen/_8pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_akariconsplus" tools:ignore="ContentDescription"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

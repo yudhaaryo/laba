@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="joinVM" type="com.yudhaaryosapplication.app.modules.join.data.viewmodel.JoinVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearIPhone8Four"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyleteal_300">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnjoin"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_60pxv"
+            android:layout_marginStart="@dimen/_65pxh"
+            android:layout_marginTop="@dimen/_120pxv"
+            android:layout_weight="0.8" android:layout_width="0dp" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackjoin"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_142pxv" android:layout_width="@dimen/_243pxh">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtJOIN"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_59pxh"
+                    android:layout_marginStart="@dimen/_59pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{joinVM.joinModel.txtJOIN}"
+                    style="@style/txtPoppinssemibold49" tools:text="@string/lbl_join2"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtBERHASIL"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{joinVM.joinModel.txtBERHASIL}"
+                    style="@style/txtPoppinssemibold49" tools:text="@string/lbl_berhasil"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackellipsethirteen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_201pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_200pxh">
+                <ImageView android:id="@+id/imageEllipseThirteen"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_201pxh"
+                    android:layout_width="@dimen/_200pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_ellipse13"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse13"/>
+
+                <ImageView
+                    android:id="@+id/imageThumbsup"
+                    android:layout_width="@dimen/_65pxh"
+                    android:layout_height="@dimen/_62pxh"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_40pxh"
+                    android:layout_marginVertical="@dimen/_40pxv"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_thumbsup"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_thumbsup" />
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtLaba"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_143pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{joinVM.joinModel.txtLaba}"
+                style="@style/txtPoppinssemibold49" tools:text="@string/lbl_laba"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtOlahragaBareng"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{joinVM.joinModel.txtOlahragaBareng}"
+                style="@style/txtPoppinslight12_1" tools:text="@string/lbl_olahraga_bareng"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtBack"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{joinVM.joinModel.txtBack}"
+                style="@style/txtPoppinsregular19" tools:text="@string/lbl_back"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageSparkling"
+            android:layout_height="@dimen/_96pxh"
+            android:layout_marginBottom="@dimen/_439pxv"
+            android:layout_marginStart="@dimen/_6pxh"
+            android:layout_marginTop="@dimen/_277pxv"
+            android:layout_width="@dimen/_61pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_sparkling}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_sparkling"/>
+    </LinearLayout>
+</layout>

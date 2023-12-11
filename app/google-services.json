@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "427904022171",
+    "project_id": "laba-firebase-3905f",
+    "storage_bucket": "laba-firebase-3905f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427904022171:android:e8023d694711dae1c7383e",
+        "android_client_info": {
+          "package_name": "com.yudhaaryosapplication.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBUuN0koorreu_eDiGHs_I9HIiA5RaFHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
