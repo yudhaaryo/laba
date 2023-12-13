@@ -29,13 +29,11 @@ class BerandaActivity : BaseActivity<ActivityMaps1Binding>(R.layout.activity_map
     binding.searchViewFrameFifteen.setOnQueryTextListener(object :
     SearchView.OnQueryTextListener {
       override fun onQueryTextSubmit(p0 : String) : Boolean {
-        // Performs search when user hit
-        // the search button on the keyboard
+
         return false
       }
       override fun onQueryTextChange(p0 : String) : Boolean {
-        // Start filtering the list as user
-        // start entering the characters
+
         return false
       }
       })

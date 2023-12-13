@@ -16,7 +16,7 @@
             android:layout_marginTop="@dimen/_51pxv"
             android:layout_width="wrap_content"
             android:singleLine="true"
-            android:text="@{loginVM.loginModel.txtLaba}"
+            android:text="Laba"
             style="@style/txtPoppinssemibold49_1" tools:text="@string/lbl_laba"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtOlahragaBareng"
@@ -26,7 +26,7 @@
             android:layout_marginStart="@dimen/_12pxh"
             android:layout_width="wrap_content"
             android:singleLine="true"
-            android:text="@{loginVM.loginModel.txtOlahragaBareng}"
+            android:text="Olahraga Bareng"
             style="@style/txtPoppinslight12" tools:text="@string/lbl_olahraga_bareng"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtLogintoyoura"
@@ -36,7 +36,7 @@
             android:layout_marginTop="@dimen/_76pxv"
             android:layout_width="wrap_content"
             android:singleLine="true"
-            android:text="@{loginVM.loginModel.txtLogintoyoura}"
+            android:text="Login to your account"
             style="@style/txtPoppinsregular15" tools:text="@string/msg_login_to_your_a"/>
         <EditText
             android:background="@drawable/rectangle_border_black_900_radius_18"
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_12pxh"
             android:layout_marginStart="@dimen/_12pxh"
-            android:layout_marginTop="@dimen/_238pxv"
+            android:layout_marginTop="72dp"
             android:layout_width="match_parent"
             android:paddingBottom="@dimen/_10pxv"
             android:paddingEnd="@dimen/_30pxh"
@@ -123,7 +123,7 @@
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_weight="0.86" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{loginVM.loginModel.txtOrSignInWith}"
+                android:text="Or Sign In With Google"
                 style="@style/txtPoppinsregular16" tools:text="@string/msg_or_sign_in_with"/>
         </LinearLayout>
         <LinearLayout android:gravity="center_vertical"
@@ -140,7 +140,7 @@
                 android:layout_marginBottom="@dimen/_1pxv"
                 android:layout_weight="0.73" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{loginVM.loginModel.txtLanguage}"
+                android:text="Dont have account?"
                 style="@style/txtPoppinsregular15" tools:text="@string/msg_dont_have_accou"/>
             <TextView android:ellipsize="end"
                 android:id="@+id/txtSignUp"
@@ -149,7 +149,7 @@
                 android:layout_marginTop="@dimen/_1pxv"
                 android:layout_weight="0.27" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{loginVM.loginModel.txtSignUp}"
+                android:text="Sign Up"
                 style="@style/txtPoppinsregular15_1" tools:text="@string/lbl_sign_up"/>
         </LinearLayout>
     </LinearLayout>

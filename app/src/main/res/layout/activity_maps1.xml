@@ -4,9 +4,13 @@
     <data>
         <variable name="maps1VM" type="com.yudhaaryosapplication.app.modules.maps1.data.viewmodel.Maps1VM"/>
     </data>
+
     <FrameLayout android:id="@+id/frameIPhone8Ten"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStyle">
+
+
+
         <LinearLayout android:id="@+id/linearColumnhaiudinsudah"
             android:layout_gravity="center"
             android:layout_height="match_parent"
@@ -30,7 +34,7 @@
                         android:layout_marginTop="@dimen/_11pxv"
                         android:layout_weight="0.82"
                         android:layout_width="0dp"
-                        android:text="@{maps1VM.maps1Model.txtHaiUdinsudah}"
+                        android:text="hai $email sudah berolahraga hari ini?"
                         style="@style/txtPoppinsmedium16" tools:text="@string/msg_hai_udin_sudah"/>
                     <ImageView android:id="@+id/imageEllipseTwelve"
                         android:layout_height="@dimen/_50pxh"

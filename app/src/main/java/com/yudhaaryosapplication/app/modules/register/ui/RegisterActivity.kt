@@ -68,24 +68,13 @@ class RegisterActivity : AppCompatActivity () {
 
 
 
-      binding.txtSignIn.setOnClickListener {
-        startActivity(Intent(this, RegisterActivity::class.java))
-        finish()
-      }
-      binding.btnSignUp.setOnClickListener {
-        startActivity(Intent(this, RegisterActivity::class.java))
-        finish()
-      }
+
     }
 
 
 
 
-      fun getIntent(context: Context, bundle: Bundle?): Intent {
-        val destIntent = Intent(context, RegisterActivity::class.java)
-        destIntent.putExtra("bundle", bundle)
-        return destIntent
-      }
+
 
   private fun RegisterFirebase(email: String, password: String) {
     auth.createUserWithEmailAndPassword(email,password)

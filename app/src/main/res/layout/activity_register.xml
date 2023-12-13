@@ -8,13 +8,14 @@
         android:layout_width="match_parent"
         android:orientation="vertical" style="@style/groupStylewhite_A700">
         <FrameLayout
-            android:layout_gravity="center_horizontal"
-            android:layout_height="@dimen/_81pxv"
-            android:layout_marginEnd="@dimen/_12pxh"
-            android:layout_marginStart="@dimen/_12pxh"
-            android:layout_marginTop="@dimen/_51pxv" android:layout_width="@dimen/_123pxh">
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_51pxv"
+            android:layout_width="match_parent">
             <TextView android:ellipsize="end"
-                android:gravity="top|start"
+                android:textAlignment="center"
                 android:id="@+id/txtOlahragaBareng"
                 android:layout_gravity="bottom|center"
                 android:layout_height="wrap_content"
@@ -22,18 +23,25 @@
                 android:layout_marginStart="@dimen/_10pxh"
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_width="match_parent"
+                android:textColor="@color/black"
                 android:singleLine="true"
-                android:text="@{registerVM.registerModel.txtOlahragaBareng}"
+                android:text="Olahraga Bareng"
                 style="@style/txtPoppinslight12" tools:text="@string/lbl_olahraga_bareng"/>
-            <TextView android:ellipsize="end"
-                android:gravity="top|start" android:id="@+id/txtLaba"
-                android:layout_gravity="top|start"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_10pxv"
+
+            <TextView
+                android:id="@+id/txtLaba"
+                style="@style/txtPoppinssemibold49_1"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:ellipsize="end"
+                android:gravity="center"
                 android:singleLine="true"
-                android:text="@{registerVM.registerModel.txtLaba}"
-                style="@style/txtPoppinssemibold49_1" tools:text="@string/lbl_laba"/>
+                android:textSize="56dp"
+                android:text="Laba"
+                android:textColor="@color/black"
+                tools:text="@string/lbl_laba" />
         </FrameLayout>
         <TextView android:ellipsize="end" android:id="@+id/txtLanguage"
             android:layout_gravity="start"
@@ -138,13 +146,14 @@
             <TextView android:ellipsize="end"
                 android:id="@+id/txtOrSignInWith"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:layout_marginBottom="@dimen/_9pxv"
                 android:layout_marginEnd="@dimen/_57pxh"
                 android:layout_marginStart="@dimen/_16pxh"
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_weight="0.86" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{registerVM.registerModel.txtOrSignInWith}"
+                android:text="Or Sign In With Google"
                 style="@style/txtPoppinsregular16" tools:text="@string/msg_or_sign_in_with"/>
         </LinearLayout>
         <LinearLayout android:gravity="start"
@@ -157,6 +166,7 @@
             android:layout_width="wrap_content" android:orientation="horizontal">
             <TextView android:ellipsize="end"
                 android:id="@+id/txtLanguageOne"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_1pxv"
                 android:layout_weight="0.69" android:layout_width="0dp"
@@ -164,6 +174,7 @@
                 android:text="@{registerVM.registerModel.txtLanguageOne}"
                 style="@style/txtPoppinsregular15" tools:text="@string/lbl_have_account"/>
             <TextView android:ellipsize="end"
+                android:textColor="@color/black"
                 android:id="@+id/txtSignIn"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5pxh"

@@ -1,2 +1,11 @@
 include ':app'
 rootProject.name = "yudha_aryo_s_application1"
+
+//maven {
+//    url = uri("https://api.mapbox.com/downloads/v2/releases/maven")
+//    // Do not change the username below. It should always be "mapbox" (not your username).
+//    credentials.usersecretname = "mapbox"
+//    // Use the  token stored in gradle.properties as the password
+//    credentials.password = providers.gradleProperty("pk.eyJ1IjoiZW1hbnVlbGhhcnRhd2FuIiwiYSI6ImNscTJpYzAwZzAwYWwyam8xdnl3NGJmdmUifQ.VVjv1eo1nEbvVPzg2bH5jg").get()
+//    authentication { basic(BasicAuthentication) }
+//}
